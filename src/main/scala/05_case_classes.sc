@@ -59,3 +59,9 @@ This is useful for pattern matching because we don’t need a “catch all” ca
 
 val couch = new Couch()
 print(findPlaceToSit(couch))
+
+
+// another example
+abstract class Expr
+case class Var(name: String) extends Expr
+case class Number(num: Double) extends Expr
